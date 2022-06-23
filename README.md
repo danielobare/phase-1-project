@@ -1,5 +1,5 @@
 #### phase-1-project
-#### This project represents data from various aviation APIs, May 1, 2022
+#### This project represents data from various aviation APIs, June 23, 2022
 #### By Daniel Obare N
 #### Description
 The application webpage takes in requests for aviation related dat such as cities,countries, aircraft types & airports and returns respective information that is crucial in the aircraft/airline industry. Data returned includes weather data, aircrafts in service, solar radiation, airport codes and information on flights.
