@@ -13,52 +13,64 @@
     </header>
 
     <div class="flight-status-search">
-        <h3>Flight Radar</h3>
-        <h4>Flight status, on-time performance and statistics by Flightera</h4>
-        <input type="text" placeholder="Enter country name" id="country-search">
-        <button id="Submit" onclick="call()">Search</button>
-        <p id="description"></p>
-        <img id="Flight Status" src="" alt="">
+        <form id="form">
+            <h3>Flight Radar</h3> 
+            <!-- We don't need an input field -->
+            <h4>Flight status, on-time performance and statistics by Flightera</h4>
+            <label for="number">Flight Status</label>
+            <input type="text" placeholder="" id="country-search">
+            <button id="Submit1">Search</button>
+            <p id="description"></p>
+            <img id="Flight Status" src="" alt="">
+        </form>
 
         <h4>Retrieves future flights from Google Flights based on key search parameters.</h4>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
+        <label for="number">Flight Search</label>
+        <input type="text" placeholder="" id="dateSearch">
+        <button id="Submit2">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
 
         <h4>Airline Codes and Rich Content (Beta)</h4>
+        <!-- We don't need input field -->
+        <label for="number"></label>
         <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
-        <p id="description"></p>
+        <button id="Submit3" onclick="call()">Search</button>
+        <p id="description">IATA & ICAO CODES</p>
         <img id="spacePic" src="" alt="">
 
         <h4>Provides Ultraviolet Radiation index data in real time.</h4>
+        <label for="number">Page Number</label>
         <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
+        <button id="Submit4" onclick="call()">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
 
         <h4>Get weather and weather forecasts for multiple cities.</h4>
+        <label for="number">Page Number</label>
         <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
+        <button id="Submit5" onclick="call()">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
 
         <h4>Provides instant access to both historical weather records and weather forecast data</h4>
+        <label for="number">Page Number</label>
         <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
+        <button id="Submit6" onclick="call()">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
 
         <h4>Returns all matching airpot details based on the most relevant keyword of city, airport code, city code etc. among collection of all airports around the world.</h4>
+        <label for="number">Page Number</label>
         <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
+        <button id="Submit7" onclick="call()">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
 
         <h4>Picture of Space</h4>
         <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit" onclick="call()">Search</button>
+        <label for="number">Page Number</label>
+        <button id="Submit8" onclick="call()">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
     </div>
