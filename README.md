@@ -8,7 +8,7 @@ The application webpage takes in requests for aviation related dat such as citie
 
 //Dan, remember to add gh-page link()
 
-This code can run on locally and on the web depending on where it is stored. If you are running the code locally, install Node.js and Node.js Unirest. Incase of any enquiries concerning installation and how to run the codes, reach me through my email dnobare@gmail.com
+This code can run on locally and on the web depending on where it is stored. Only install JavaScript - which, actually, is readily available in many of the modern web browsers. Incase of any enquiries concerning installation and how to run the codes, reach me through my email dnobare@gmail.com
 #### Known Bugs
 No known bugs but will add fixes and patches once bugs arise.
 #### Technologies Used
