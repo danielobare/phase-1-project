@@ -20,3 +20,17 @@ h2{
 h4{
   color:black;
 }
+.social-media{
+  width:25%;
+  margin:0 auto;
+  float: left;
+  overflow-y: auto;
+}
+.flight-status-search{
+  width:70%;
+  margin:0 auto;
+  float:right;
+  border-radius: 5px;
+  height: 9250px;
+  padding: 20px;
+}
