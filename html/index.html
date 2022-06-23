@@ -4,64 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/main.css" rel="stylesheet" type="text/css" >
+    <link href="/css/main.css" rel="stylesheet" type="text/css" >
     <title>Obare Flight Data</title>
 </head>
 <body>
-    <div class="v7_5"><span
-            class="v3_11">obareland.gov</span><span class="v3_19">Welcome to obareland.gov</span><span
-            class="v3_22">Obareland citizens and foreign residents can now apply for government to citizen services and
-            pay via mobile money, debit Cards and eCitizen agents.</span><span class="v3_27">Search</span>
-        <div class="v3_28"></div><span class="v3_30">Services Offered</span>
-        <div class="v3_31"></div>
-        <div class="v3_33"></div>
-        <div class="v3_34"></div><span class="v3_35">Passport application</span><span class="v3_36">Work permit
-            application</span><span class="v3_37">Student Visa application</span><span class="v3_39">Helpful
-            links</span><span class="v3_40">
-            Customer care helpdesk
-            <br>
-            Report Fraud</span><span class="v3_42">Reach us at
-            <br>
-            Obareland_gov
-            <br>
-            General enquiries
-            <br>
-            enquiries@obare-flight-ops.gov
-            +254700000000
-            <br>
-            +254722222222
-            <br>
-            0 (20) 456456456
-            <br>
-            0 (20) 600600600
-            <br>
-        </span>
-        <div class="v5_43"></div>
-        <span class="v6_2">
-            <br>
-            Life in Obareland
-            <br>
-            COVID 19
-            <br>
-            Find a Job
-            <br>
-            Financial support
-            <br>
-            Customer care support
-            <br>
-            Embassy locations & work hours
-            <br>
-        </span>
-        <div class="v7_4"></div>
-        <div class="v7_10"></div><span class="v37_4">Results</span>
-    </div>
+    <header>
+        <h2>Obare Flight Data</h2>
+    </header>
 
-    <!-- <div class="space-image-search">
-        <h1>Picture of Space</h1>
+    <div class="flight-status-search">
+        <h3>Flight Radar</h3>
+        <h4>Flight status, on-time performance and statistics by Flightera</h4>
+        <input type="text" placeholder="Enter country name" id="country-search">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="Flight Status" src="" alt="">
+
+        <h4>Retrieves future flights from Google Flights based on key search parameters.</h4>
         <input type="text" placeholder="Please enter date" id="dateSearch">
         <button id="Submit" onclick="call()">Search</button>
         <p id="description"></p>
         <img id="spacePic" src="" alt="">
-    </div> -->
+
+        <h4>Airline Codes and Rich Content (Beta)</h4>
+        <input type="text" placeholder="Please enter date" id="dateSearch">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="spacePic" src="" alt="">
+
+        <h4>Provides Ultraviolet Radiation index data in real time.</h4>
+        <input type="text" placeholder="Please enter date" id="dateSearch">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="spacePic" src="" alt="">
+
+        <h4>Get weather and weather forecasts for multiple cities.</h4>
+        <input type="text" placeholder="Please enter date" id="dateSearch">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="spacePic" src="" alt="">
+
+        <h4>Provides instant access to both historical weather records and weather forecast data</h4>
+        <input type="text" placeholder="Please enter date" id="dateSearch">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="spacePic" src="" alt="">
+
+        <h4>Returns all matching airpot details based on the most relevant keyword of city, airport code, city code etc. among collection of all airports around the world.</h4>
+        <input type="text" placeholder="Please enter date" id="dateSearch">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="spacePic" src="" alt="">
+
+        <h4>Picture of Space</h4>
+        <input type="text" placeholder="Please enter date" id="dateSearch">
+        <button id="Submit" onclick="call()">Search</button>
+        <p id="description"></p>
+        <img id="spacePic" src="" alt="">
+    </div>
+    <div class="social-media">
+        <a class="twitter-timeline" href="https://twitter.com/flightradar24?ref_src=twsrc%5Etfw">Tweets by flightradar24</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    <div class="other-flight-data">
+        <h4>Aviation News</h4>
+    </div>
+
+    <style>
+        .social-media{
+            width:25%;
+            margin:0 auto;
+            float: left;
+            overflow-y: auto;
+        }
+        .other-flight-data{
+            width:35%;
+            overflow-y: auto;
+            /* background-image: url('/images/douglas-bagg.jpg'); */
+        }
+        .flight-status-search{
+            width:40%;
+            margin:0 auto;
+            float:right;
+        }
+        /* *{
+            background-image: url('/images/iwan-shimko.jpg');
+        } */
+        
+    </style>
+
+        <embed name="Airplane Sound" src="/Assets/airplane-sound.mp3" loop="true" hidden="true" autostart="true">
+
+            <p style="background-image: url('/images/iwan-shimko.jpg');">
+
 </body>
 </html>
