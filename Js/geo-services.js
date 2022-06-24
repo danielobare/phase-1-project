@@ -38,4 +38,8 @@ function geoServices(){
 	  })
 }
 
-geoServices();
+function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices;
+}
+
+document.getElementById('btn2').addEventListener('click', geoServicesEvent);

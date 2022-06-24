@@ -38,6 +38,11 @@ function worldAirportsDirectory(){
 	  })
 }
 
-worldAirportsDirectory();
+function worldAirportsDirectoryEvent(){
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory;
+}
+
+document.getElementById('btn8').addEventListener('click', worldAirportsDirectoryEvent);
+
 //freemium
 //works

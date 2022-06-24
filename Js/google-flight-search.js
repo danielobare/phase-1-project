@@ -27,7 +27,11 @@ function googleFlightSearch(){
 	  })
 }
 
-googleFlightSearch();
+function googleFlightSearchEvent(){
+	document.getElementById('google-flight-search').innerHTML = googleFlightSearch;
+}
+
+document.getElementById('btn3').addEventListener('click', googleFlightSearchEvent);
 
 
 //freemium

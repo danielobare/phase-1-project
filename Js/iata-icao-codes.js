@@ -33,7 +33,11 @@ function iataIcaoCodes(){
 	  })
 }
 
-iataIcaoCodes();
+function iataIcaoCodesEvent(){
+	document.getElementById('iata-icao-codes').innerHTML = iataIcaoCodes;
+}
+
+document.getElementById('btn4').addEventListener('click', iataIcaoCodesEvent);
 
 
 

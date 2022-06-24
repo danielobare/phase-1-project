@@ -27,6 +27,10 @@ function openWeatherMap(){
 	  })
 }
 
-openWeatherMap();
+function openWeatherEvent(){
+	document.getElementById('open-weather').innerHTML = openWeather;
+}
+
+document.getElementById('btn6').addEventListener('click', openWeatherEvent);
 
 //freemium

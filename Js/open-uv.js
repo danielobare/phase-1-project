@@ -16,6 +16,10 @@ function openUv(){
 	  })
 }
 
-openUv();
+function openUvEvent(){
+	document.getElementById('open-uv').innerHTML = openUv;
+}
+
+document.getElementById('btn5').addEventListener('click', openUvEvent);
 
 //FREE

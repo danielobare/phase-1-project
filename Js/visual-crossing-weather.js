@@ -28,7 +28,9 @@ function visualCrossingWeather(){
 		  console.log(data);
 	  })
 }
+function visualCrossingWeatherEvent(){
+	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather;
+}
 
-visualCrossingWeather();
-
+document.getElementById('btn7').addEventListener('click', visualCrossingWeatherEvent);
 //freemium
