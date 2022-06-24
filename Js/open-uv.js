@@ -10,16 +10,18 @@ function openUv(){
   			"content-type": "application/json; charset=utf-8"
 		  }
 	  }).then((response)=>{
-		  return response.text();
-	  }).then((data) => {
-		  console.log(data);
-	  })
+		return response.text();
+	}).then((data) => {
+	setTimeout(() => {
+	  console.log(data);
+	}, "5000")
+	})
 }
 
-function openUvEvent(){
-	document.getElementById('open-uv').innerHTML = openUv;
+
+async function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn5').addEventListener('click', openUvEvent);
-
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 //FREE

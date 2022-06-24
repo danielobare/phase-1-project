@@ -21,17 +21,19 @@ function googleFlightSearch(){
 			"x-ratelimit-requests-reset": "2559008"
 		  }
 	  }).then((response)=>{
-		  return response.text();
-	  }).then((data) => {
-		  console.log(data);
-	  })
+		return response.text();
+	}).then((data) => {
+	setTimeout(() => {
+	  console.log(data);
+	}, "5000")
+	})
 }
 
-function googleFlightSearchEvent(){
-	document.getElementById('google-flight-search').innerHTML = googleFlightSearch;
+async function flightRadar(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn3').addEventListener('click', googleFlightSearchEvent);
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 
 
 //freemium

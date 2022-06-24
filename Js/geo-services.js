@@ -1,4 +1,4 @@
-function geoServices(){
+async function geoServices(){
 	fetch(
 		"https://geo-services-by-mvpc-com.p.rapidapi.com/sun_positions?location=43%2C5&date=2019-10-14",
 		{
@@ -34,12 +34,14 @@ function geoServices(){
 	  }).then((response)=>{
 		  return response.text();
 	  }).then((data) => {
-		  console.log(data);
+      setTimeout(() => {
+        console.log(data);
+      }, "5000")
 	  })
 }
 
-function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices;
+async function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent);
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());

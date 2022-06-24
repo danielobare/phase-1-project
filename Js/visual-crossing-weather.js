@@ -23,14 +23,16 @@ function visualCrossingWeather(){
 			"x-ratelimit-requests-reset": "2560268"
 		  }
 	  }).then((response)=>{
-		  return response.text();
-	  }).then((data) => {
-		  console.log(data);
-	  })
+		return response.text();
+	}).then((data) => {
+	setTimeout(() => {
+	  console.log(data);
+	}, "5000")
+	})
 }
-function visualCrossingWeatherEvent(){
-	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather;
+async function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn7').addEventListener('click', visualCrossingWeatherEvent);
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 //freemium

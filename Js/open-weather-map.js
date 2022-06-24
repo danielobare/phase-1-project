@@ -20,17 +20,17 @@ function openWeatherMap(){
 			"x-ratelimit-basic-remaining": "494",
 			"x-ratelimit-basic-reset": "2560596"
 		  }
-	  }).then((response)=>{
-		  return response.text();
 	  }).then((data) => {
+		setTimeout(() => {
 		  console.log(data);
-	  })
+		}, "5000")
+		})
 }
 
-function openWeatherEvent(){
-	document.getElementById('open-weather').innerHTML = openWeather;
+async function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn6').addEventListener('click', openWeatherEvent);
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 
 //freemium

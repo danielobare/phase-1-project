@@ -19,9 +19,17 @@ fetch("https://flight-radar1.p.rapidapi.com/airports/list", {
 		"x-ratelimit-requests-reset": "2560361",
   },
 }).then((response)=>{
-	return response.text();
+    return response.text();
 }).then((data) => {
-	console.log(data);
+setTimeout(() => {
+  console.log(data);
+}, "5000")
 })
+
+async function flightRadar(){
+	document.getElementById('geo-services').innerHTML = geoServices();
+}
+
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 
 //freemium

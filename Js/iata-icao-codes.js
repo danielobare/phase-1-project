@@ -27,17 +27,19 @@ function iataIcaoCodes(){
 			"x-rapidapi-version": "1.2.8"
 		  }
 	  }).then((response)=>{
-		  return response.text();
-	  }).then((data) => {
-		  console.log(data);
-	  })
+		return response.text();
+	}).then((data) => {
+	setTimeout(() => {
+	  console.log(data);
+	}, "5000")
+	})
 }
 
-function iataIcaoCodesEvent(){
-	document.getElementById('iata-icao-codes').innerHTML = iataIcaoCodes;
+async function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn4').addEventListener('click', iataIcaoCodesEvent);
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 
 
 

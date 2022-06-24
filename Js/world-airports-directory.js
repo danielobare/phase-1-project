@@ -32,17 +32,19 @@ function worldAirportsDirectory(){
 			"x-xss-protection": "0",
 		  }
 	  }).then((response)=>{
-		  return response.text();
-	  }).then((data) => {
-		  console.log(data);
-	  })
+		return response.text();
+	}).then((data) => {
+	setTimeout(() => {
+	  console.log(data);
+	}, "5000")
+	})
 }
 
-function worldAirportsDirectoryEvent(){
-	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory;
+async function geoServicesEvent(){
+	document.getElementById('geo-services').innerHTML = geoServices();
 }
 
-document.getElementById('btn8').addEventListener('click', worldAirportsDirectoryEvent);
+document.getElementById('btn2').addEventListener('click', geoServicesEvent());
 
 //freemium
 //works
