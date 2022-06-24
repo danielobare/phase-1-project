@@ -29,11 +29,13 @@ function googleFlightSearch(){
 	})
 }
 
-async function flightRadar(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function googleFlightSearchEvent(){
+	document.getElementById('google-flight-search').innerHTML = googleFlightSearch();
+	document.getElementById('google-flight-search').innerHTML = googleFlightSearch();
+	document.getElementById('google-flight-search').innerHTML = googleFlightSearch();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn3').addEventListener('click', googleFlightSearchEvent());
 
 
 //freemium

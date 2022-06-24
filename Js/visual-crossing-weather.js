@@ -30,9 +30,13 @@ function visualCrossingWeather(){
 	}, "5000")
 	})
 }
-async function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function visualCrossingWeatherEvent(){
+	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn7').addEventListener('click', visualCrossingWeatherEvent());
 //freemium

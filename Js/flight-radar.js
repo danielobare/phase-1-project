@@ -26,10 +26,12 @@ setTimeout(() => {
 }, "5000")
 })
 
-async function flightRadar(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function flightRadarEvent(){
+	document.getElementById('flight-radar').innerHTML = flightRadar();
+    document.getElementById('flight-radar').innerHTML = flightRadar();
+    document.getElementById('flight-radar').innerHTML = flightRadar();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn').addEventListener('click', flightRadarEvent());
 
 //freemium

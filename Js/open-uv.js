@@ -19,9 +19,11 @@ function openUv(){
 }
 
 
-async function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function openUvEvent(){
+	document.getElementById('open-uv').innerHTML = openUv();
+	document.getElementById('open-uv').innerHTML = openUv();
+	document.getElementById('open-uv').innerHTML = openUv();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn5').addEventListener('click', openUvEvent());
 //FREE

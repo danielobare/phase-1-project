@@ -27,10 +27,12 @@ function openWeatherMap(){
 		})
 }
 
-async function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function openWeatherMapEvent(){
+	document.getElementById('open-weather-map').innerHTML = openWeatherMap();
+	document.getElementById('open-weather-map').innerHTML = openWeatherMap();
+	document.getElementById('open-weather-map').innerHTML = openWeatherMap();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn6').addEventListener('click', openWeatherMapEvent());
 
 //freemium

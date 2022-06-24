@@ -35,11 +35,13 @@ function iataIcaoCodes(){
 	})
 }
 
-async function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function iataIcaoCodesEvent(){
+	document.getElementById('iata-icao-codes').innerHTML = iataIcaoCodes();
+	document.getElementById('iata-icao-codes').innerHTML = iataIcaoCodes();
+	document.getElementById('iata-icao-codes').innerHTML = iataIcaoCodes();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn4').addEventListener('click', iataIcaoCodesEvent());
 
 
 

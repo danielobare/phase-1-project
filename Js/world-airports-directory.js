@@ -32,7 +32,7 @@ function worldAirportsDirectory(){
 			"x-xss-protection": "0",
 		  }
 	  }).then((response)=>{
-		return response.text();
+		return response.json();
 	}).then((data) => {
 	setTimeout(() => {
 	  console.log(data);
@@ -40,11 +40,19 @@ function worldAirportsDirectory(){
 	})
 }
 
-async function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices();
+async function worldAirportsDirectoryEvent(){
+	setTimeout(() => {
+		document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
+	}, "5000")
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
+	document.getElementById('world-airports-directory').innerHTML = worldAirportsDirectory();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+document.getElementById('btn8').addEventListener('click', worldAirportsDirectoryEvent());
 
 //freemium
 //works
