@@ -32,10 +32,10 @@ function visualCrossingWeather(){
 }
 async function visualCrossingWeatherEvent(){
 	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
-	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
-	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
-	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
-	document.getElementById('visual-crossing-weather').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather-2').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather-3').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather-4').innerHTML = visualCrossingWeather();
+	document.getElementById('visual-crossing-weather-5').innerHTML = visualCrossingWeather();
 }
 
 document.getElementById('btn7').addEventListener('click', visualCrossingWeatherEvent());

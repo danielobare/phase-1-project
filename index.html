@@ -13,70 +13,93 @@
     </header>
 
     <div class="flight-status-search">
-        <form id="form">
-            <h3>Flight Radar</h3> 
-            <!-- We don't need an input field -->
-            <h4>Flight status, on-time performance and statistics by Flightera</h4>
-            <label for="number">Flight Status</label>
-            <input type="text" placeholder="" id="country-search">
-            <button id="Submit1">Search</button>
-            <p id="description"></p>
-            <img id="Flight Status" src="" alt="">
+
+        <form action="" method="GET">
+            <h4>Flight Radar</h4>
+            <input type="text" placeholder="" id="flight-radar-1">
+            <input type="button" id="btn" value="Submit">
+            <p id="description">Flight Radar</p>
         </form>
+      <!-- <div id="flight-radar"></div>   -->
 
-        <h4>Retrieves future flights from Google Flights based on key search parameters.</h4>
-        <label for="number">Flight Search</label>
-        <input type="text" placeholder="" id="dateSearch">
-        <button id="Submit2">Search</button>
-        <p id="description"></p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h4>Geo - Services</h4>
+            <input type="text" placeholder="" id="geo-services-1">
+            <input type="button" id="btn2" value="Submit">
+            <p id="description">Geo-Services</p>
+        </form>
+        <div id="geo-services"></div>
 
-        <h4>Airline Codes and Rich Content (Beta)</h4>
-        <!-- We don't need input field -->
-        <label for="number"></label>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit3" onclick="call()">Search</button>
-        <p id="description">IATA & ICAO CODES</p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h5>Retrieves future flights from Google Flights based on key search parameters.</h5> 
+            <!-- We don't need an input field -->
+            <h4>Google Flight Search</h4>
+            <input type="text" placeholder="" id="google-flight-search-1">
+            <input type="button" id="btn3" value="Submit">
+            <p id="description">Google Flight Search</p>
+        </form>
+        <div id="google-flight-search"></div>
 
-        <h4>Provides Ultraviolet Radiation index data in real time.</h4>
-        <label for="number">Page Number</label>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit4" onclick="call()">Search</button>
-        <p id="description"></p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h4>Airline Codes and Rich Content (Beta)</h4>
+            <!-- We don't need input field -->
+            <input type="text" placeholder="" id="iata-icao-codes-1">
+            <input type="button" id="btn4" value="Submit">
+            <p id="description">Iata & Icao Codes</p>
+        </form>
+        <div id="iata-icao-codes"></div>
 
-        <h4>Get weather and weather forecasts for multiple cities.</h4>
-        <label for="number">Page Number</label>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit5" onclick="call()">Search</button>
-        <p id="description"></p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h4>Provides Ultraviolet Radiation index data in real time.</h4>
+            <input type="text" placeholder="" id="open-uv-1">
+            <input type="button" id="btn5" value="Submit">
+            <p id="description">Open UV Radiation Data</p>
+        </form>
+        <div id="open-uv"></div>
 
-        <h4>Provides instant access to both historical weather records and weather forecast data</h4>
-        <label for="number">Page Number</label>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit6" onclick="call()">Search</button>
-        <p id="description"></p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h4>Get weather and weather forecasts for multiple cities.</h4>
+            <input type="text" placeholder="" id="open-weather-map-1">
+            <input type="button" id="btn6" value="Submit">
+            <p id="description">Open Weather Map</p>
+            <!-- <img id="spacePic" src="" alt=""> -->
+        </form>
+        <div id="open-weather-map"></div>
 
-        <h4>Returns all matching airpot details based on the most relevant keyword of city, airport code, city code etc. among collection of all airports around the world.</h4>
-        <label for="number">Page Number</label>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <button id="Submit7" onclick="call()">Search</button>
-        <p id="description"></p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h4>Provides instant access to both historical weather records and weather forecast data</h4>
+            <input type="text" placeholder="" id="visual-crossing-weather-1">
+            <input type="button" id="btn7" value="Submit">
+            <img id="spacePic" src="" alt="">
+            <p id="description">Visual Crossing Weather</p>
+        </form>
+        <div id="visual-crossing-weather"></div>
 
-        <h4>Picture of Space</h4>
-        <input type="text" placeholder="Please enter date" id="dateSearch">
-        <label for="number">Page Number</label>
-        <button id="Submit8" onclick="call()">Search</button>
-        <p id="description"></p>
-        <img id="spacePic" src="" alt="">
+        <form action="" method="GET">
+            <h4>Returns all matching airpot details based on the most relevant keyword of city, airport code, city code etc. among collection of all airports around the world.</h4>
+            <input type="text" placeholder="" id="world-airports-directory-1">
+            <input type="button" id="btn8" value="Submit">
+            <p id="description">World Airports Directory</p>
+        </form>
+        <div id="world-airports-directory"></div>
+        <div id="world-airports-directory-2"></div>
+        <div id="world-airports-directory-3"></div>
+        <div id="world-airports-directory-4"></div>
+        <div id="world-airports-directory-5"></div>
+
+        <p id="picture-of-space"></p>
     </div>
     <div class="social-media">
         <a class="twitter-timeline" href="https://twitter.com/flightradar24?ref_src=twsrc%5Etfw">Tweets by flightradar24</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
         <embed name="Airplane Sound" src="/Assets/airplane-sound.mp3" loop="true" hidden="true" autostart="true">
+
+    <script src="/Js/flight-radar.js"></script>
+    <script src="/Js/geo-services.js"></script>
+    <script src="/Js/google-flight-search.js"></script>
+    <script src="/Js/iata-icao-codes.js"></script>
+    <script src="/Js/open-uv.js"></script>
+    <script src="/Js/visual-crossing-weather.js"></script>
+    <script src="/Js/world-airports-directory.js"></script>
 </body>
 </html>

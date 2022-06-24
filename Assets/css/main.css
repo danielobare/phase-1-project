@@ -1,5 +1,6 @@
 *{
   font-family:Georgia;
+  background-color: rgb(206, 204, 204);
 }
 /* p{
   background: white;
@@ -33,4 +34,5 @@ h4{
   border-radius: 5px;
   height: 9250px;
   padding: 20px;
+  background-color: rgb(206, 204, 204);
 }
