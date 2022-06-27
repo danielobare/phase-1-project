@@ -27,19 +27,21 @@ function iataIcaoCodes() {
 			},
 		})
 		.then(result => result.json())
-		.then(data => {
-			console.log("data", data);
+		.then(text => {
+			// console.log("data",data);
+			let main = document.getElementById('iata-icao-codes')
+			main.innerHTML = text;
 		});
 }
 
-function iataIcaoCodesEvent() {
-	document.getElementById('iata-icao-codes').innerText = iataIcaoCodes();
-}
+// function iataIcaoCodesEvent() {
+// 	document.getElementById('iata-icao-codes').innerText = iataIcaoCodes();
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
 	let btn = document.getElementById('Submit4');
 	btn.addEventListener('click', () => {
-		iataIcaoCodesEvent();
+		iataIcaoCodes();
 	})
 })
 

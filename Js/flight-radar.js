@@ -22,22 +22,26 @@ function flightRadar(){
   },
 })
     .then(result => result.json())
-    .then(data => {
-        console.log("data",data);
+    .then(text => {
+        // console.log("data",data);
+        let main = document.getElementById('flight-radar')
+        main.innerHTML = text;
     });
 }
 
-function flightRadarEvent(){
-	document.getElementById('flight-radar').innerText = flightRadar();
-}
+// function flightRadarEvent(){
+// 	document.getElementById('flight-radar').innerText = flightRadar();
+// }
 
 // document.getElementById('Submit1').addEventListener('click', () => flightRadarEvent());
 document.addEventListener('DOMContentLoaded', () => {
 	let btn =document.getElementById('Submit1');
 	btn.addEventListener('click', () => {
-		flightRadarEvent();
+		flightRadar();
 	})
 })
 
 
 //freemium
+
+//

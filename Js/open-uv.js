@@ -11,20 +11,21 @@ function openUv() {
 				},
 			}
 		)
-		.then((result) => result.json())
-		.then((data) => {
-			console.log("data", data);
+		.then(text => {
+			// console.log("data",data);
+			let main = document.getElementById('open-uv')
+			main.innerHTML = text;
 		});
 }
 
-function openUvEvent() {
-	document.getElementById("open-uv").innerText = openUv();
-}
+// function openUvEvent() {
+// 	document.getElementById("open-uv").innerText = openUv();
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
 	let btn = document.getElementById("Submit5");
 	btn.addEventListener("click", () => {
-		openUvEvent();
+		openUv();
 	});
 });
 

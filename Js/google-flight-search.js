@@ -21,19 +21,21 @@ function googleFlightSearch(){
   },
 })
     .then(result => result.json())
-    .then(data => {
-        console.log("data",data);
+    .then(text => {
+        // console.log("data",data);
+        let main = document.getElementById('google-flight-search')
+        main.innerHTML = text;
     });
 }
 
-function googleFlightSearchEvent(){
-	document.getElementById('google-flight-search').innerText = googleFlightSearch();
-}
+// function googleFlightSearchEvent(){
+// 	document.getElementById('google-flight-search').innerText = googleFlightSearch();
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
 	let btn =document.getElementById('Submit3');
 	btn.addEventListener('click', () => {
-		googleFlightSearchEvent();
+		googleFlightSearch();
 	})
 })
 

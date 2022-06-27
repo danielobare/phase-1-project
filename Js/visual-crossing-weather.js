@@ -27,20 +27,23 @@ function visualCrossingWeather() {
     }
   )
     .then((result) => result.json())
-    .then((data) => {
-      console.log("data", data);
-    });
+    .then(text => {
+		// console.log("data",data);
+		let main = document.getElementById('visual-crossing-weather')
+		main.innerHTML = text;
+
+	});
 }
 
-function visualCrossingWeatherEvent() {
-  document.getElementById("visual-crossing-weather").innerText =
-    visualCrossingWeather();
-}
+// function visualCrossingWeatherEvent() {
+//   document.getElementById("visual-crossing-weather").innerText =
+//     visualCrossingWeather();
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   let btn = document.getElementById("Submit7");
   btn.addEventListener("click", () => {
-    visualCrossingWeatherEvent();
+    visualCrossingWeather();
   });
 });
 

@@ -35,20 +35,23 @@ function worldAirportsDirectory() {
 	  }
 	)
 	  .then((result) => result.json())
-	  .then((data) => {
-		console.log("data", data);
-	  });
+	  .then(text => {
+		// console.log("data",data);
+		let main = document.getElementById('world-airports-directory')
+		main.innerHTML = text;
+
+	});
   }
   
-  function worldAirportsDirectoryEvent() {
-	document.getElementById("world-airports-directory").innerText =
-	worldAirportsDirectory();
-  }
+//   function worldAirportsDirectoryEvent() {
+// 	document.getElementById("world-airports-directory").innerText =
+// 	worldAirportsDirectory();
+//   }
   
   document.addEventListener("DOMContentLoaded", () => {
 	let btn = document.getElementById("Submit8");
 	btn.addEventListener("click", () => {
-		worldAirportsDirectoryEvent();
+		worldAirportsDirectory();
 	});
   });
 

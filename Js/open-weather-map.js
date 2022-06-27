@@ -23,19 +23,21 @@ function openWeatherMap() {
 			}
 		)
 		.then((result) => result.json())
-		.then((data) => {
-			console.log("data", data);
+		.then(text => {
+			// console.log("data",data);
+			let main = document.getElementById('open-weather-map')
+			main.innerHTML = text;
 		});
 }
 
-function openWeatherMapEvent() {
-	document.getElementById("open-weather-map").innerText = openWeatherMap();
-}
+// function openWeatherMapEvent() {
+// 	document.getElementById("open-weather-map").innerText = openWeatherMap();
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
 	let btn = document.getElementById("Submit6");
 	btn.addEventListener("click", () => {
-		openWeatherMapEvent();
+		openWeatherMap();
 	});
 });
 

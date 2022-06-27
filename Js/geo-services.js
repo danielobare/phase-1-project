@@ -31,19 +31,22 @@ function geoServices(){
     "x-ratelimit-requests-reset": "2591960"
   },
 })
-    .then(result => result.json())
-    .then(data => {
-        console.log("data",data);
+    .then(result => result.text())
+    .then(text => {
+        // console.log("data",data);
+        let main = document.getElementById('geo-services')
+        main.innerHTML = text;
+        console.log(text)
     });
 }
 
-function geoServicesEvent(){
-	document.getElementById('geo-services').innerText = geoServices();
-}
+// function geoServicesEvent(){
+// 	document.getElementById('geo-services').innerText = geoServices();
+// }
 
 document.addEventListener('DOMContentLoaded', () => {
 	let btn =document.getElementById('Submit2');
 	btn.addEventListener('click', () => {
-		geoServicesEvent();
+		geoServices();
 	})
 })
