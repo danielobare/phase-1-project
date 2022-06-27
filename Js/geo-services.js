@@ -1,9 +1,16 @@
-async function geoServices(){
-	fetch(
-		"https://geo-services-by-mvpc-com.p.rapidapi.com/sun_positions?location=43%2C5&date=2019-10-14",
-		{
-		  headers: {
-			"X-RapidAPI-Key": "68cf647b7amsh2469ec3887468a1p18243ajsncf1aad177e7f",
+function json2array(json){
+  var result = [];
+  var keys = Object.keys(json);
+  keys.forEach(function(key){
+      result.push(json[key]);
+  });
+  return result;
+
+function geoServices(){
+	fetch('https://geo-services-by-mvpc-com.p.rapidapi.com/sun_positions?location=43%2C5&date=2019-10-14', {
+	"method": 'GET',
+	"headers": {
+		"X-RapidAPI-Key": "68cf647b7amsh2469ec3887468a1p18243ajsncf1aad177e7f",
 			"X-RapidAPI-Host": "geo-services-by-mvpc-com.p.rapidapi.com",
             "access-control-allow-credentials": "true",
             "access-control-allow-headers": "Origin, X-Requested-With, Content-Type, Accept",
@@ -29,21 +36,19 @@ async function geoServices(){
             "x-rapidapi-version": "1.2.8",
             "x-ratelimit-requests-limit": "1000",
             "x-ratelimit-requests-remaining": "997",
-            "x-ratelimit-requests-reset": "2591960"
-		  }
-	  }).then((response)=>{
-		  return response.text();
-	  }).then((data) => {
-      setTimeout(() => {
-        console.log(data);
-      }, "5000")
-	  })
+            "x-ratelimit-requests-reset": "2591960",
+  },
+})
+    .then(response => response.json())
+    .then(result => {
+      // const obj = JSON.parse(json_data)
+        console.log(result);
+    });
 }
 
-async function geoServicesEvent(){
-	document.getElementById('geo-services').innerHTML = geoServices();
-  document.getElementById('geo-services').innerHTML = geoServices();
-  document.getElementById('geo-services').innerHTML = geoServices();
+function geoServicesEvent(){
+	document.getElementById('geo-services').innerText = geoServices();
 }
 
-document.getElementById('btn2').addEventListener('click', geoServicesEvent());
+
+document.getElementById('Submit2').addEventListener('click', () => geoServicesEvent());

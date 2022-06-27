@@ -1,5 +1,10 @@
 *{
-  font-family:Georgia;
+  font-family:monospace;
+  align-content: center;
+  background-color: whitesmoke;
+}
+#nav{
+  flex: content;
 }
 /* p{
   background: white;
@@ -17,8 +22,10 @@
 h2{
   font-family: Georgia;
 }
-h4{
-  color:black;
+h3{
+  color:grey;
+  align-content:flex-end;
+  font-size: smaller;
 }
 .social-media{
   width:25%;
@@ -27,10 +34,12 @@ h4{
   overflow-y: auto;
 }
 .flight-status-search{
-  width:70%;
+  width:40%;
   margin:0 auto;
-  float:right;
   border-radius: 5px;
-  height: 9250px;
+  border-style:inset;
+  height: 5050px;
   padding: 20px;
+  color: grey;
+  background-color: whitesmoke;
 }

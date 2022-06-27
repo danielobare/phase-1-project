@@ -1,4 +1,5 @@
-fetch("https://flight-radar1.p.rapidapi.com/airports/list", {
+function flightRadar(){
+	fetch('https://flight-radar1.p.rapidapi.com/airports/list', {
 	"method": 'GET',
 	"headers": {
 		"X-RapidAPI-Key": "68cf647b7amsh2469ec3887468a1p18243ajsncf1aad177e7f",
@@ -6,7 +7,7 @@ fetch("https://flight-radar1.p.rapidapi.com/airports/list", {
 		"access-control-allow-credentials": "true",
 		"access-control-allow-headers": "ver",
 		"access-control-allow-methods": "GET, POST",
-		"access-control-allow-origin": "*",
+		"access-control-allow-origin": "",
 		"connection": "keep-alive",
 		"content-type": "application/json",
 		"date": "Thu, 23 Jun 2022 20:22:05 GMT",
@@ -17,21 +18,26 @@ fetch("https://flight-radar1.p.rapidapi.com/airports/list", {
 		"x-ratelimit-requests-limit": "500",
 		"x-ratelimit-requests-remaining": "492",
 		"x-ratelimit-requests-reset": "2560361",
+		"body": "JSON.stringify({''})"
   },
-}).then((response)=>{
-    return response.text();
-}).then((data) => {
-setTimeout(() => {
-  console.log(data);
-}, "5000")
 })
-
-async function flightRadarEvent(){
-	document.getElementById('flight-radar').innerHTML = flightRadar();
-    document.getElementById('flight-radar').innerHTML = flightRadar();
-    document.getElementById('flight-radar').innerHTML = flightRadar();
+    .then(result => result.json())
+    .then(data => {
+        console.log("data",data);
+    });
 }
 
-document.getElementById('btn').addEventListener('click', flightRadarEvent());
+function flightRadarEvent(){
+	document.getElementById('flight-radar').innerText = flightRadar();
+}
+
+// document.getElementById('Submit1').addEventListener('click', () => flightRadarEvent());
+document.addEventListener('DOMContentLoaded', () => {
+	let btn =document.getElementById('Submit1');
+	btn.addEventListener('click', () => {
+		flightRadarEvent();
+	})
+})
+
 
 //freemium
