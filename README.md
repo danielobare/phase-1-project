@@ -6,7 +6,7 @@ The application webpage takes in requests for aviation related dat such as citie
 #### Setup/Installation Requirements
 * You can view it on the secure gh-page link
 
-//Dan, remember to add gh-page link()
+https://danielobare.github.io/phase-1-project/
 
 This code can run on locally and on the web depending on where it is stored. Only install JavaScript - which, actually, is readily available in many of the modern web browsers. Incase of any enquiries concerning installation and how to run the codes, reach me through my email dnobare@gmail.com
 #### Known Bugs
