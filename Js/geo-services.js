@@ -49,6 +49,7 @@ function geoServices(){
 function geoServicesEvent(){
 	document.getElementById('geo-services').innerText = geoServices();
 }
+}
 
 
 document.getElementById('Submit2').addEventListener('click', () => geoServicesEvent());
